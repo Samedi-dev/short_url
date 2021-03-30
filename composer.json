@@ -1,0 +1,24 @@
+{
+    "name": "samedi/short-link",
+    "description": "Convert link to short-link",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Stavitskiy",
+            "email": "stavicky73@gmail.com"
+        }
+    ],
+    "require": {
+      "php": "^7.4",
+      "ext-ctype": "*",
+      "ext-pdo": "*",
+      "ext-json": "*",
+      "ext-mbstring": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

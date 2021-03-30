@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Short Link Generator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/resources/js/script.js"></script>
+</head>
+<body>
+<div class="container block">
+    <div class="col-md-8">
+        <form method="post" id="shortForm">
+            <div class="form-group">
+                <label for="url">Enter your link:</label>
+                <input autocomplete="off" type="text" class="form-control" id="url" name="url">
+            </div>
+            <div class="col text-center">
+                <button type="button" id="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+        <div class="row margin_top" id="short_block" hidden>
+            <span>Short link</span>
+            <div class="col-md-8">
+                <input id="short_link" type="text" class="form-control" name="short_link">
+            </div>
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary" onclick="copyUrl()">Copy link</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
