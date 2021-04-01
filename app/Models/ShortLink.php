@@ -31,12 +31,13 @@ class ShortLink extends ConnectionDB
         return '';
     }
 
-    public function getShortUrl($key): string
+    public function getShortUrl($key)
     {
         $query = "SELECT * FROM links WHERE url = '" . $key . "'";
 
         try {
             $result = $this->connect()->query($query);
+
             while ($row = $result->fetch()) {
                 return $row['short'];
             }
@@ -45,6 +46,25 @@ class ShortLink extends ConnectionDB
         }
 
         return '';
+    }
+
+    public function getCountRecordUrl($key)
+    {
+        $query = "SELECT count(*) FROM links WHERE url = '" . $key . "'";
+
+        try {
+            $result = $this->connect()->query($query);
+
+            while ($row = $result->fetch()) {
+                if ($row['count'] == 1) {
+                    return true;
+                }
+            }
+        } catch (Exception $exception) {
+            Logger::setLog($exception->getMessage());
+        }
+
+        return false;
     }
 
     public function setShortUrl(string $url): void
