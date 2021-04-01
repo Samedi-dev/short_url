@@ -1,0 +1,8 @@
+2021-04-01 12:18:17 - test_connect() - Connection established
+2021-04-01 12:18:17 - Read record - {"id":43,"url":"url-value","short":"short-value"}
+2021-04-01 12:18:17 - Read record - {"id":44,"url":"url-value","short":"short-value"}
+2021-04-01 12:18:17 - Read record - {"id":45,"url":"url-value","short":"short-value"}
+2021-04-01 12:18:17 - Read record - {"id":46,"url":"url-value","short":"short-value"}
+2021-04-01 12:18:17 - Read record - {"id":47,"url":"url-value","short":"short-value"}
+2021-04-01 12:18:17 - Read record - {"id":48,"url":"url-value","short":"short-value"}
+2021-04-01 12:18:17 - Count records = 7
