@@ -7,7 +7,7 @@
 ``` sql
 CREATE TABLE links (
 	id serial NOT NULL PRIMARY KEY,
-	url varchar(191) NOT NULL,
+	url text NOT NULL,
 	short varchar(100) NOT NULL   
 );
 ```
